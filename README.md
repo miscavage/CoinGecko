@@ -23,7 +23,7 @@ For complete API documentation, up-to-date parameters, responses and errors, ple
 ```javascript
 //1. Import coingecko-api
 const CoinGecko = require('coingecko-api');
-
+      CoinGecko.TIMEOUT = 10; // Optional parameter for set timeout for request. Default: 30 seconds
 //2. Initiate the CoinGecko API Client
 const CoinGeckoClient = new CoinGecko();
 
