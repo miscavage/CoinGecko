@@ -392,6 +392,12 @@ List all exchanges.
 
 Official documentation: https://www.coingecko.com/api/docs/v3#/exchanges_(beta)/get_exchanges
 
+Params:
+
+- `params`: `Object` - Parameters to pass through to the request
+- `params.page`: `Number` - Page through results
+- `params.per_page`: `Number` - Total results per page maximun 250, default 100
+
 Usage Example:
 ```javascript
 let data = await CoinGeckoClient.exchanges.all();
